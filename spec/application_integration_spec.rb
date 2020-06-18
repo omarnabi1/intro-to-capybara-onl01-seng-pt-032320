@@ -23,6 +23,6 @@ describe "POST '/greet' - User Greeting" do
     fill_in(:user_name, :with => "Omar")
     click_button "Submit"
 
-    expect(page).to have_text("Hi Omar, I am your slave computer butler")
+    expect(page).to have_text("Hi Omar, nice to meet you!")
   end
 end
