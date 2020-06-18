@@ -7,7 +7,7 @@ describe "GET '/' - Greeting Form" do
     expect(page.body).to include("Welcome!")
   end
 
-  # New test
+  #New test
   it 'has a greeting form with a user_name field' do
     visit '/'
 
@@ -20,9 +20,9 @@ describe "POST '/greet' - User Greeting" do
   it 'greets the user personally based on their user_name in the form' do
     visit '/'
 
-    fill_in(:user_name, :with => "Avi")
+    fill_in(:user_name, :with => "Omar")
     click_button "Submit"
 
-    expect(page).to have_text("Hi Avi, nice to meet you!")
+    expect(page).to have_text("Hi Omar, I am your slave computer butler")
   end
 end
